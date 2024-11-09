@@ -1,5 +1,5 @@
 from pathlib import Path
-import django_heroku
+# import django_heroku
 import dj_database_url
 import os
 
@@ -9,7 +9,7 @@ SECRET_KEY = 'django-insecure-s)t_-oj%9&e4+jn#h7!l9$-@ngcjf9bz(5)&0w5t)urin&^a8s
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']  # Allow all hosts for Heroku
+ALLOWED_HOSTS = ["*"]  # Allow all hosts for Heroku
 
 INSTALLED_APPS = [
     'django.contrib.admin',
