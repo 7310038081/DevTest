@@ -1,13 +1,18 @@
 {
-    "version": 2,
     "builds": [
-      {
-        "src": "Dockerfile",
-        "use": "@vercel/docker"
-      }
+        {
+            "src": "DevTest/wsgi.py",
+            "use": "@vercel/python",
+            "config": {
+                "maxLambdaSize": "15mb",
+                "runtime": "python3.12.0"
+            }
+        }
     ],
-    "env": {
-      "DJANGO_SETTINGS_MODULE": "DevTest.settings"
-    }
-  }
-  
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "DevTest/wsgi.py"
+        }
+    ]
+}
