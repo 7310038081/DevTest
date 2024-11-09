@@ -1,0 +1,80 @@
+# Python
+*.pyc
+*.pyo
+__pycache__
+*.pyd
+*.db
+*.sqlite3
+*.log
+*.pot
+*.mo
+*.swp
+*~
+
+# Django
+*.log
+*.pot
+*.pyc
+*.sqlite3
+db.sqlite3
+/static/
+media/
+
+# Environment variables
+.env
+.env.*
+.venv/
+venv/
+env/
+ENV/
+
+# VSCode
+.vscode/
+
+# PyCharm
+.idea/
+
+# MacOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+
+# Local settings file
+local_settings.py
+
+# Coverage reports
+.coverage
+*.coveragerc
+coverage.xml
+nosetests.xml
+test_*.xml
+*.coverage
+
+# Sphinx documentation
+docs/_build/
+
+# Distribution/Packaging
+*.egg
+*.egg-info
+dist/
+build/
+eggs/
+lib/
+lib64/
+parts/
+sdist/
+wheels/
+*.manifest
+*.spec
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt

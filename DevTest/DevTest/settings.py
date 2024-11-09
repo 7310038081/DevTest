@@ -12,7 +12,6 @@ DEBUG = True
 ALLOWED_HOSTS = ['*']  # Allow all hosts for Heroku
 
 INSTALLED_APPS = [
-    'whitenoise.runserver_nonstatic'
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -24,7 +23,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',  # Enable WhiteNoise
+    'whitenoise.middleware.WhiteNoiseMiddleware',  # <-- Add this line
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
