@@ -37,7 +37,7 @@ def upload_file(request):
             # Prepare email body with the summary data
             email_body = "\n".join([f"{row['Cust_State']}, {row['Cust_Pin']}, {row['DPD']}" for row in summary])
             send_mail(
-                subject='Python Assignment - Your Name',
+                subject='Python Assignment -Vivek Singh',
                 message=email_body,
                 from_email=settings.DEFAULT_FROM_EMAIL,
                 recipient_list=['tech@themedius.ai'],
