@@ -1,5 +1,5 @@
 from pathlib import Path
-import django_heroku
+# import django_heroku
 import dj_database_url
 import os
 
@@ -84,7 +84,7 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'accounts/static')]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # Activate Django-Heroku settings
-django_heroku.settings(locals())
+# django_heroku.settings(locals())
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
