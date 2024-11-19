@@ -41,5 +41,6 @@ Deployment
 The project is deployed on Vercel. You can access it here.
 
 Repository and Deployment Links:
-GitHub Repository: https://github.com/7310038081/DevTest
+GitHub Repository: https://github.com/7310038081/DevTest.git
+
 
