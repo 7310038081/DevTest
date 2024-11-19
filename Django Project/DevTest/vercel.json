@@ -1,0 +1,22 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "wsgi.py",
+        "use": "@vercel/python"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/wsgi.py"
+      }
+    ],
+    "env": {
+      "DJANGO_SETTINGS_MODULE": "DevTest.settings",
+      "DATABASE_URL": "your-database-url",
+      "AWS_ACCESS_KEY_ID": "your-aws-access-key-id",
+      "AWS_SECRET_ACCESS_KEY": "your-aws-secret-access-key"
+    }
+  }
+  
